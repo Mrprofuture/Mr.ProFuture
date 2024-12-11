@@ -1,64 +1,99 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #1a1a1d;
-    color: #c9c9c9;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a3410;
+    color: #e4f3e4;
     line-height: 1.6;
 }
 
+/* Header Section */
 header {
-    background: #4caf50;
+    background-color: #27ae60;
     color: white;
+    padding: 1.5rem 0;
     text-align: center;
-    padding: 1rem 0;
 }
 
-h1, h2, h3 {
-    margin: 0.5rem 0;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
-main {
-    padding: 1rem;
-    max-width: 800px;
+header p {
+    font-size: 1.2rem;
+}
+
+/* Section Styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
+    padding: 2rem 0;
 }
 
-section {
-    margin-bottom: 2rem;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #81c784;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Updates Section */
 #updates pre {
-    background: #333;
-    color: #eee;
+    background: #2e7d32;
+    color: #e4f3e4;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 8px;
+    border: 1px solid #81c784;
     white-space: pre-wrap;
     word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Gallery Section */
 #gallery {
+    text-align: center;
+}
+
+#image-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
+    margin-top: 1rem;
 }
 
-#gallery img {
+#image-gallery img {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 5px;
-    transition: transform 0.3s;
+    border-radius: 10px;
+    border: 2px solid #27ae60;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-#gallery img:hover {
+#image-gallery img:hover {
     transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Footer Section */
 footer {
+    background-color: #1b5e20;
+    color: #e4f3e4;
     text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: #c9c9c9;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
