@@ -10,21 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error('Error fetching updates:', error);
         });
 
-    // Load APK download link from link.txt
-    fetch('link.txt')
-        .then(response => response.text())
-        .then(data => {
-            const downloadButton = document.getElementById('download-button');
-            downloadButton.href = data.trim(); // Use the trimmed link
-            downloadButton.textContent = 'Download Minecraft APK';
-        })
-        .catch(error => {
-            const downloadButton = document.getElementById('download-button');
-            downloadButton.textContent = 'Link not available';
-            downloadButton.href = '#';
-            console.error('Error fetching link:', error);
-        });
-
     // Load images from /images directory
     const imageGallery = document.getElementById('image-gallery');
     fetch('images/')
