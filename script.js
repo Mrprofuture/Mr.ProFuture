@@ -36,4 +36,20 @@ document.addEventListener("DOMContentLoaded", () => {
             imageGallery.textContent = 'Error loading images.';
             console.error('Error fetching images:', error);
         });
+
+    // Load download link from link.txt
+    const downloadButton = document.getElementById('download-button');
+    fetch('link.txt')
+        .then(response => response.text())
+        .then(link => {
+            downloadButton.textContent = 'Download Minecraft';
+            downloadButton.disabled = false;
+            downloadButton.onclick = () => {
+                window.open(link.trim(), '_blank');
+            };
+        })
+        .catch(error => {
+            downloadButton.textContent = 'Error loading link';
+            console.error('Error fetching download link:', error);
+        });
 });
