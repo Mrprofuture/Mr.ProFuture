@@ -1,105 +1,64 @@
-/* General styles (same as before) */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f3f3f3;
-    color: #333;
+    background-color: #1a1a1d;
+    color: #c9c9c9;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #228b22;
+    background: #4caf50;
     color: white;
     text-align: center;
-    padding: 1.5em 0;
+    padding: 1rem 0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 0.5em 0 0;
+h1, h2, h3 {
+    margin: 0.5rem 0;
 }
 
 main {
-    padding: 1em;
-    max-width: 900px;
-    margin: 0 auto;
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
 }
 
 section {
-    margin-bottom: 2em;
-    background: white;
-    padding: 1em;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
 }
 
-h2 {
-    margin-top: 0;
-    color: #228b22;
+#updates pre {
+    background: #333;
+    color: #eee;
+    padding: 1rem;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
-#updates-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-#updates-list li {
-    padding: 0.5em 0;
-    border-bottom: 1px solid #ddd;
-}
-
-#image-container {
+#gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 10px;
+    justify-content: center;
 }
 
-#image-container img {
+#gallery img {
     width: 150px;
     height: 150px;
-    border-radius: 4px;
     object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.1);
 }
 
 footer {
     text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: white;
-}
-
-/* Admin Panel and Login */
-.hidden {
-    display: none;
-}
-
-form {
-    margin-top: 1em;
-    display: flex;
-    flex-direction: column;
-}
-
-textarea, input {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    padding: 0.5em;
-    background-color: #228b22;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #1a6c19;
+    padding: 1rem;
+    background: #333;
+    color: #c9c9c9;
 }
