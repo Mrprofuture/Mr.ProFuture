@@ -1,3 +1,4 @@
+/* General styles (same as before) */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -51,6 +52,31 @@ h2 {
     border-bottom: 1px solid #ddd;
 }
 
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Admin Panel and Login */
+.hidden {
+    display: none;
+}
+
 form {
     margin-top: 1em;
     display: flex;
@@ -76,24 +102,4 @@ button {
 
 button:hover {
     background-color: #1a6c19;
-}
-
-#image-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-}
-
-#image-container img {
-    width: 150px;
-    height: 150px;
-    border-radius: 4px;
-    object-fit: cover;
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: white;
 }
