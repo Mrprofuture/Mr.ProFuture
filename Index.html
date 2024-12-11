@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Pro.Future - Minecraft Server Updates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mr.Pro.Future</h1>
+        <p>Your hub for Minecraft server updates and images!</p>
+    </header>
+    
+    <main>
+        <section id="updates">
+            <h2>Server Updates</h2>
+            <ul id="updates-list">
+                <!-- Updates will be dynamically loaded here -->
+            </ul>
+            <form id="update-form">
+                <textarea id="update-input" placeholder="Add a new server update..." required></textarea>
+                <button type="submit">Post Update</button>
+            </form>
+        </section>
+
+        <section id="gallery">
+            <h2>Minecraft Gallery</h2>
+            <div id="image-container">
+                <!-- Images will be displayed here -->
+            </div>
+            <form id="image-form">
+                <input type="url" id="image-url" placeholder="Enter image URL" required>
+                <button type="submit">Add Image</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Mr.Pro.Future. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
