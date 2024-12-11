@@ -55,6 +55,14 @@ h2 {
     word-wrap: break-word;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+/* Main Section Background Image */
+main {
+    background-image: url('background.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 20px; /* Adjust as needed */
+}
 /* Download Section */
 #download {
     text-align: center;
