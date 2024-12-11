@@ -12,14 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* Container */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 2rem 0;
-}
-
 /* Header Section */
 header {
     background-color: #27ae60;
@@ -38,15 +30,18 @@ header p {
 }
 
 /* Section Styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #81c784;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-}
-
-section {
-    margin-bottom: 2rem;
 }
 
 /* Updates Section */
@@ -59,44 +54,6 @@ section {
     white-space: pre-wrap;
     word-wrap: break-word;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-/* Minecraft APK Section */
-#minecraft-apk {
-    margin-top: 2rem;
-    text-align: center;
-    background: #2e7d32;
-    padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid #81c784;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-#minecraft-apk h3 {
-    color: #81c784;
-    margin-bottom: 0.5rem;
-}
-
-#minecraft-apk p {
-    margin-bottom: 1rem;
-}
-
-/* Download Button */
-.button {
-    display: inline-block;
-    background-color: #27ae60;
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 0.7rem 1.5rem;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.button:hover {
-    background-color: #1e8449;
-    transform: scale(1.05);
 }
 
 /* Gallery Section */
