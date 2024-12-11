@@ -3,64 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr.Pro.Future - Minecraft Server Updates</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mr.Pro.Future</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Mr.Pro.Future</h1>
-        <p>Your hub for Minecraft server updates and images!</p>
+        <h2>Minecraft Server Updates</h2>
     </header>
-    
+
     <main>
         <section id="updates">
-            <h2>Server Updates</h2>
-            <ul id="updates-list">
-                <!-- Updates will be dynamically loaded here -->
-            </ul>
+            <h3>Latest Updates</h3>
+            <pre id="updates-content">Loading updates...</pre>
         </section>
 
         <section id="gallery">
-            <h2>Minecraft Gallery</h2>
-            <div id="image-container">
-                <!-- Images will be displayed here -->
-            </div>
+            <h3>Server Images</h3>
+            <div id="image-gallery">Loading images...</div>
         </section>
     </main>
 
-    <!-- Admin Panel (Hidden by default) -->
-    <div id="admin-panel" class="hidden">
-        <h2>Admin Panel</h2>
-        <section>
-            <h3>Post Server Updates</h3>
-            <form id="update-form">
-                <textarea id="update-input" placeholder="Add a new server update..." required></textarea>
-                <button type="submit">Post Update</button>
-            </form>
-        </section>
-
-        <section>
-            <h3>Add Images to Gallery</h3>
-            <form id="image-form">
-                <input type="url" id="image-url" placeholder="Enter image URL" required>
-                <button type="submit">Add Image</button>
-            </form>
-        </section>
-    </div>
-
-    <!-- Admin Login -->
-    <div id="admin-login">
-        <h3>Admin Login</h3>
-        <form id="login-form">
-            <input type="password" id="admin-password" placeholder="Enter admin password" required>
-            <button type="submit">Login</button>
-        </form>
-    </div>
-    
     <footer>
-        <p>&copy; 2024 Mr.Pro.Future. All Rights Reserved.</p>
+        <p>© 2024 Mr.Pro.Future - Stay Updated with Minecraft!</p>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
