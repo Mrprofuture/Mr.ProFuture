@@ -18,10 +18,6 @@
             <ul id="updates-list">
                 <!-- Updates will be dynamically loaded here -->
             </ul>
-            <form id="update-form">
-                <textarea id="update-input" placeholder="Add a new server update..." required></textarea>
-                <button type="submit">Post Update</button>
-            </form>
         </section>
 
         <section id="gallery">
@@ -29,12 +25,37 @@
             <div id="image-container">
                 <!-- Images will be displayed here -->
             </div>
+        </section>
+    </main>
+
+    <!-- Admin Panel (Hidden by default) -->
+    <div id="admin-panel" class="hidden">
+        <h2>Admin Panel</h2>
+        <section>
+            <h3>Post Server Updates</h3>
+            <form id="update-form">
+                <textarea id="update-input" placeholder="Add a new server update..." required></textarea>
+                <button type="submit">Post Update</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Add Images to Gallery</h3>
             <form id="image-form">
                 <input type="url" id="image-url" placeholder="Enter image URL" required>
                 <button type="submit">Add Image</button>
             </form>
         </section>
-    </main>
+    </div>
+
+    <!-- Admin Login -->
+    <div id="admin-login">
+        <h3>Admin Login</h3>
+        <form id="login-form">
+            <input type="password" id="admin-password" placeholder="Enter admin password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
     
     <footer>
         <p>&copy; 2024 Mr.Pro.Future. All Rights Reserved.</p>
