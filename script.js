@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Manually specify images if directory listing is not working
     const imageGallery = document.getElementById('image-gallery');
-    const imageFiles = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];  // Add your image filenames here
+    const imageFiles = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg', 'image6.jpg'];  // Add your image filenames here
 
     imageFiles.forEach(file => {
         const img = document.createElement('img');
